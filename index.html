@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidad — Postly</title>
+  <meta name="description" content="Política de Privacidad de Postly: qué datos recopilamos, cómo los usamos, cómo protegemos las cuentas de Facebook e Instagram y cómo puedes ejercer tus derechos.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f172a">
+  <style>
+    :root {
+      --ink: #0f172a;
+      --ink-soft: #334155;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+      --accent-soft: #eff6ff;
+      --accent-line: #bfdbfe;
+      --warning-soft: #fffbeb;
+      --warning-line: #fde68a;
+      --radius: 16px;
+      --shadow: 0 24px 60px rgba(15, 23, 42, 0.10);
+      --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink-soft);
+      background: var(--bg);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: var(--accent); }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--ink);
+      color: #fff;
+      padding: 12px 18px;
+      z-index: 10;
+      border-radius: 0 0 8px 0;
+    }
+
+    .skip-link:focus { left: 0; }
+
+    .site-header {
+      background: #0b1220;
+      color: #e2e8f0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #60a5fa, #2563eb);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 800;
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+    }
+
+    .badge {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #bfdbfe;
+      border: 1px solid rgba(191, 219, 254, 0.35);
+      padding: 6px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .hero {
+      background:
+        radial-gradient(1000px 420px at 85% -10%, rgba(96, 165, 250, 0.30), transparent 60%),
+        radial-gradient(800px 380px at 10% 0%, rgba(37, 99, 235, 0.22), transparent 55%),
+        linear-gradient(135deg, #0b1220 0%, #111c33 55%, #16264a 100%);
+      color: #e2e8f0;
+      padding: 64px 0 104px;
+    }
+
+    .hero .wrap { max-width: 900px; }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #93c5fd;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .lead {
+      margin: 20px 0 0;
+      max-width: 760px;
+      font-size: 18px;
+      color: #cbd5e1;
+      line-height: 1.65;
+    }
+
+    .updated {
+      margin: 22px 0 0;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .content {
+      position: relative;
+      margin: -64px auto 56px;
+      width: min(900px, calc(100% - 40px));
+      background: var(--card);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 48px;
+    }
+
+    .summary {
+      background: linear-gradient(180deg, var(--accent-soft), #f8fbff);
+      border: 1px solid var(--accent-line);
+      border-radius: 14px;
+      padding: 24px 26px;
+      margin: 0 0 36px;
+    }
+
+    .summary h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent-dark);
+      border: 0;
+      padding: 0;
+    }
+
+    .summary ul { margin: 0; padding-left: 20px; }
+    .summary li { margin: 6px 0; }
+
+    .toc {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin: 0 0 42px;
+      background: #fbfdff;
+    }
+
+    .toc h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border: 0;
+      padding: 0;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 24px;
+      counter-reset: toc;
+    }
+
+    .toc li {
+      counter-increment: toc;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .toc li::before {
+      content: counter(toc, decimal-leading-zero) ". ";
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+    }
+
+    .toc a { text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+
+    section { margin: 0 0 42px; }
+    section:last-of-type { margin-bottom: 0; }
+
+    h2 {
+      margin: 0 0 14px;
+      padding-left: 14px;
+      border-left: 4px solid var(--accent);
+      font-size: 25px;
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 18px;
+      color: var(--ink);
+    }
+
+    p { margin: 0 0 14px; }
+    ul, ol { margin: 0 0 16px; padding-left: 24px; }
+    li { margin: 6px 0; }
+    strong { color: var(--ink); }
+
+    .note {
+      background: var(--warning-soft);
+      border: 1px solid var(--warning-line);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 18px 0;
+      font-size: 15.5px;
+    }
+
+    .note strong { color: #92400e; }
+
+    .contact-card {
+      background: #0b1220;
+      color: #cbd5e1;
+      border-radius: 14px;
+      padding: 24px 26px;
+      margin-top: 18px;
+    }
+
+    .contact-card a { color: #93c5fd; }
+    .contact-card p { margin: 6px 0; }
+
+    .back-top {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: #fff;
+      padding: 28px 0 36px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .site-footer p { margin: 0; }
+
+    section[id] { scroll-margin-top: 24px; }
+
+    @media (max-width: 720px) {
+      body { font-size: 16px; }
+      .hero { padding: 48px 0 88px; }
+      .content { padding: 30px 22px; margin-top: -56px; }
+      .toc ol { grid-template-columns: 1fr; }
+      .badge { display: none; }
+      h2 { font-size: 22px; }
+      .summary, .toc { padding: 20px; }
+    }
+
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      .site-header, .site-footer, .toc, .back-top { display: none; }
+      .hero { background: none; color: #000; padding: 0 0 18px; }
+      .hero h1, .hero .lead, .eyebrow, .updated { color: #000; }
+      .content { box-shadow: none; border: 0; margin: 0; padding: 0; width: 100%; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>Postly</span>
+      </a>
+      <span class="badge">Documento legal</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Privacidad y datos</p>
+        <h1>Política de Privacidad</h1>
+        <p class="lead">
+          Esta política explica qué datos recopila Postly, cómo los usa y protege,
+          y qué opciones tienes cuando conectas tus marcas, páginas de Facebook y
+          cuentas profesionales de Instagram.
+        </p>
+        <p class="updated">Última actualización: 21 de octubre de 2026 · Versión 1.0</p>
+      </div>
+    </div>
+
+    <article class="content" id="contenido">
+      <div class="summary">
+        <h2>En resumen</h2>
+        <ul>
+          <li>No vendemos tus datos personales.</li>
+          <li>Los tokens de acceso a redes sociales se guardan cifrados y nunca se muestran en el navegador.</li>
+          <li>Puedes desconectar tus cuentas y solicitar la eliminación de tus datos en cualquier momento.</li>
+          <li>No publicamos contenido en tus redes sin una acción o confirmación tuya.</li>
+        </ul>
+      </div>
+
+      <nav class="toc" aria-label="Contenido">
+        <h2>Contenido</h2>
+        <ol>
+          <li><a href="#responsable">Responsable del tratamiento</a></li>
+          <li><a href="#datos">Datos que recopilamos</a></li>
+          <li><a href="#finalidad">Para qué usamos los datos</a></li>
+          <li><a href="#base-legal">Base legal</a></li>
+          <li><a href="#meta">Cuentas de Facebook e Instagram</a></li>
+          <li><a href="#cookies">Cookies</a></li>
+          <li><a href="#conservacion">Conservación</a></li>
+          <li><a href="#seguridad">Seguridad</a></li>
+          <li><a href="#terceros">Terceros</a></li>
+          <li><a href="#derechos">Tus derechos</a></li>
+          <li><a href="#eliminacion-de-datos">Eliminación de datos</a></li>
+          <li><a href="#menores">Menores</a></li>
+          <li><a href="#cambios">Cambios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ol>
+      </nav>
+
+      <section id="responsable">
+        <h2>1. Responsable del tratamiento</h2>
+        <p>
+          <strong>Postly</strong> es una herramienta para gestionar marcas, programar
+          publicaciones y conectar cuentas de redes sociales. Para los fines de esta
+          política, Postly actúa como responsable del tratamiento de los datos
+          personales que se describen a continuación.
+        </p>
+        <p>
+          Puedes contactar al responsable en
+          <a href="mailto:privacidad@postly.app">privacidad@postly.app</a>.
+        </p>
+      </section>
+
+      <section id="datos">
+        <h2>2. Datos que recopilamos</h2>
+        <p>Recopilamos únicamente los datos necesarios para operar el servicio:</p>
+
+        <h3>Datos de la cuenta</h3>
+        <ul>
+          <li>Nombre y dirección de correo electrónico.</li>
+          <li>Contraseña almacenada como hash, nunca en texto plano.</li>
+          <li>Rol, permisos y preferencias dentro de la herramienta.</li>
+        </ul>
+
+        <h3>Datos de las marcas</h3>
+        <ul>
+          <li>Nombre, descripción, imágenes y demás información que agregues.</li>
+          <li>Contenido, calendario de publicaciones y estados de aprobación.</li>
+        </ul>
+
+        <h3>Cuentas de redes sociales conectadas</h3>
+        <ul>
+          <li>Identificadores y nombres de páginas de Facebook.</li>
+          <li>Identificadores, nombres de usuario y datos básicos de cuentas profesionales de Instagram.</li>
+          <li>Permisos concedidos y tokens de acceso emitidos por Meta.</li>
+          <li>Resultados de publicación y, cuando la funcionalidad esté disponible, métricas agregadas.</li>
+        </ul>
+        <p>
+          <strong>No recibimos ni almacenamos tu contraseña de Facebook o Instagram.</strong>
+          La autorización se realiza mediante el flujo OAuth de Meta.
+        </p>
+
+        <h3>Datos técnicos y de uso</h3>
+        <ul>
+          <li>Dirección IP, tipo de navegador, dispositivo y sistema operativo.</li>
+          <li>Fechas y horas de acceso, registros de errores y eventos de seguridad.</li>
+          <li>Mensajes que nos envías a través de los canales de soporte.</li>
+        </ul>
+      </section>
+
+      <section id="finalidad">
+        <h2>3. Para qué usamos los datos</h2>
+        <ul>
+          <li>Crear y administrar tu cuenta y tus marcas.</li>
+          <li>Conectar páginas de Facebook y cuentas profesionales de Instagram.</li>
+          <li>Programar, publicar y dar seguimiento al contenido que tú o tu equipo crean.</li>
+          <li>Mostrar métricas y resultados de las publicaciones cuando estén disponibles.</li>
+          <li>Mantener la seguridad, prevenir abusos y diagnosticar errores.</li>
+          <li>Cumplir obligaciones legales y responder a solicitudes de autoridades competentes.</li>
+          <li>Comunicarnos contigo sobre el servicio, cambios importantes o soporte.</li>
+        </ul>
+        <p>
+          No utilizamos tus datos para venderlos, alquilarlos ni para publicidad de
+          terceros. Tampoco elaboramos perfiles comerciales con tus cuentas de redes
+          sociales.
+        </p>
+      </section>
+
+      <section id="base-legal">
+        <h2>4. Base legal</h2>
+        <p>Tratamos los datos con una o varias de las siguientes bases:</p>
+        <ul>
+          <li><strong>Ejecución del servicio:</strong> para crear tu cuenta, gestionar marcas y publicar el contenido que solicitas.</li>
+          <li><strong>Consentimiento:</strong> para conectar cuentas de redes sociales y para comunicaciones opcionales.</li>
+          <li><strong>Interés legítimo:</strong> para mantener la seguridad, prevenir fraudes y mejorar la herramienta.</li>
+          <li><strong>Obligación legal:</strong> cuando la normativa aplicable exige conservar o entregar determinada información.</li>
+        </ul>
+        <p>
+          Puedes retirar tu consentimiento en cualquier momento desconectando las
+          cuentas o escribiéndonos. La retirada no afecta la licitud del tratamiento
+          realizado antes de esa fecha.
+        </p>
+      </section>
+
+      <section id="meta">
+        <h2>5. Cuentas de Facebook e Instagram</h2>
+        <p>
+          Postly utiliza las API de Meta para conectar páginas de Facebook y cuentas
+          profesionales de Instagram. Cuando autorizas la conexión:
+        </p>
+        <ul>
+          <li>Meta nos entrega un token de acceso y la información básica de las páginas y cuentas que autorizas.</li>
+          <li>Usamos ese token únicamente para las acciones que autorizaste: leer la página, publicar contenido y consultar métricas cuando corresponda.</li>
+          <li>Verificamos mediante la API de Meta que la cuenta de Instagram esté vinculada a la página de Facebook; no asumimos que lo esté por el simple hecho de que ambas existan.</li>
+          <li>Guardamos los tokens cifrados y los eliminamos cuando desconectas la cuenta.</li>
+        </ul>
+        <p>
+          Al desconectar una página de Facebook, también se desconectan los tokens de
+          la cuenta de Instagram vinculada a esa página. Puedes revocar el acceso de
+          Postly en cualquier momento desde la configuración de aplicaciones de
+          Facebook o Instagram.
+        </p>
+        <p>
+          El tratamiento que Meta realiza de tus datos se rige por sus propias
+          políticas de privacidad. Te recomendamos revisarlas.
+        </p>
+        <div class="note">
+          <strong>Publicaciones:</strong> Postly no publica contenido en tus redes sin
+          una acción o confirmación del usuario. Las publicaciones se realizan
+          conforme a la programación o autorización que tú establezcas.
+        </div>
+      </section>
+
+      <section id="cookies">
+        <h2>6. Cookies</h2>
+        <p>
+          Postly utiliza una cookie de sesión estrictamente necesaria para mantener
+          tu autenticación mientras usas la herramienta. Sin esa cookie, no es
+          posible iniciar sesión ni mantener la sesión activa.
+        </p>
+        <p>
+          No utilizamos cookies publicitarias ni tecnologías de seguimiento de
+          terceros. Puedes configurar tu navegador para bloquear o eliminar cookies,
+          pero algunas funciones del servicio podrían dejar de funcionar.
+        </p>
+      </section>
+
+      <section id="conservacion">
+        <h2>7. Conservación</h2>
+        <ul>
+          <li>Conservamos los datos de tu cuenta mientras esté activa y mientras sea necesario para prestarte el servicio.</li>
+          <li>Los tokens de acceso se eliminan cuando desconectas la cuenta correspondiente.</li>
+          <li>Los registros técnicos y de seguridad se conservan durante períodos limitados.</li>
+          <li>Si solicitas la eliminación de tu cuenta, conservaremos únicamente la información que la ley obligue a mantener y la eliminaremos cuando ese plazo termine.</li>
+        </ul>
+      </section>
+
+      <section id="seguridad">
+        <h2>8. Seguridad</h2>
+        <p>Aplicamos medidas técnicas y organizativas para proteger tus datos:</p>
+        <ul>
+          <li>Cifrado de los tokens de acceso en reposo mediante AES-256-GCM.</li>
+          <li>Transmisión cifrada mediante HTTPS en los entornos publicados.</li>
+          <li>Acceso restringido a las credenciales y a la base de datos.</li>
+          <li>Los tokens nunca se envían al navegador ni se muestran en la interfaz.</li>
+          <li>Registro y revisión de errores de seguridad.</li>
+        </ul>
+        <p>
+          Ningún sistema es completamente seguro. Si detectamos un incidente que
+          afecte tus datos, te informaremos y adoptaremos las medidas necesarias
+          conforme a la legislación aplicable.
+        </p>
+      </section>
+
+      <section id="terceros">
+        <h2>9. Terceros</h2>
+        <p>Compartimos datos únicamente con los proveedores necesarios para operar el servicio:</p>
+        <ul>
+          <li><strong>Meta Platforms (Facebook e Instagram):</strong> para el inicio de sesión OAuth, la publicación de contenido y la consulta de métricas.</li>
+          <li><strong>Proveedores de infraestructura:</strong> alojamiento, base de datos, correo y herramientas de automatización que actúan como encargados del tratamiento.</li>
+          <li><strong>Autoridades:</strong> cuando exista una obligación legal o una solicitud válida.</li>
+        </ul>
+        <p>
+          Estos proveedores pueden tratar datos en otros países. Cuando corresponda,
+          adoptamos medidas contractuales y organizativas para proteger la
+          información. No vendemos datos personales a terceros.
+        </p>
+      </section>
+
+      <section id="derechos">
+        <h2>10. Tus derechos</h2>
+        <p>Según la legislación aplicable, tienes derecho a:</p>
+        <ul>
+          <li>Acceder a los datos que tenemos sobre ti.</li>
+          <li>Solicitar su rectificación o actualización.</li>
+          <li>Solicitar su eliminación.</li>
+          <li>Solicitar la limitación u oponerte a determinados tratamientos.</li>
+          <li>Solicitar la portabilidad de tus datos.</li>
+          <li>Retirar tu consentimiento en cualquier momento.</li>
+          <li>Presentar una reclamación ante la autoridad de protección de datos de tu país.</li>
+        </ul>
+        <p>
+          Para ejercer estos derechos, escríbenos a
+          <a href="mailto:privacidad@postly.app">privacidad@postly.app</a>.
+          Podremos pedirte información adicional para verificar tu identidad y
+          responderemos dentro del plazo que exija la ley aplicable.
+        </p>
+      </section>
+
+      <section id="eliminacion-de-datos">
+        <h2>11. Eliminación de datos</h2>
+        <p>Puedes solicitar la eliminación de tus datos de las siguientes formas:</p>
+        <ul>
+          <li>Desde la herramienta, desconectando las cuentas de redes sociales y eliminando las marcas o el contenido que corresponda.</li>
+          <li>Escribiendo a <a href="mailto:privacidad@postly.app">privacidad@postly.app</a> con el asunto <strong>“Eliminación de datos”</strong>.</li>
+          <li>Revocando el acceso de Postly desde la configuración de aplicaciones de Facebook o Instagram.</li>
+        </ul>
+        <p>
+          Verificaremos tu identidad y eliminaremos los datos en un plazo razonable,
+          que no superará los 30 días, salvo que exista una obligación legal de
+          conservarlos. Los tokens de acceso se eliminan al desconectar la cuenta.
+        </p>
+      </section>
+
+      <section id="menores">
+        <h2>12. Menores</h2>
+        <p>
+          Postly no está dirigido a menores de 18 años y no recopilamos
+          conscientemente datos de menores. Si crees que un menor nos ha
+          proporcionado datos, escríbenos para eliminarlos.
+        </p>
+      </section>
+
+      <section id="cambios">
+        <h2>13. Cambios</h2>
+        <p>
+          Podemos actualizar esta política para reflejar cambios en el servicio o en
+          la normativa. Publicaremos la nueva versión en esta misma página con su
+          fecha de actualización. Si los cambios son importantes, te lo
+          comunicaremos por los canales habituales.
+        </p>
+      </section>
+
+      <section id="contacto">
+        <h2>14. Contacto</h2>
+        <p>Si tienes preguntas sobre esta política o sobre el tratamiento de tus datos:</p>
+        <div class="contact-card">
+          <p><strong>Responsable:</strong> Postly</p>
+          <p><strong>Correo:</strong> <a href="mailto:privacidad@postly.app">privacidad@postly.app</a></p>
+          <p><strong>Asunto sugerido:</strong> Privacidad de datos</p>
+        </div>
+        <a class="back-top" href="#top">Volver al inicio ↑</a>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Postly. Todos los derechos reservados.</p>
+      <p>Página informativa · Sin cookies ni rastreadores.</p>
+    </div>
+  </footer>
+</body>
+</html>
